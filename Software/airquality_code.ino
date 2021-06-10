@@ -1,5 +1,10 @@
+/*Air Quality Monitering project was built to monitor and sample atmospheric 
+parameters such as Carbon monoxide concentration, Temperature and Humidity in targeted spots in a city. 
+The collected data will be later sampled to analyse the results with the help of cloud ThingSpeak 
+to determine the factors that affects these key parameters */
+ 
 
- //Libraries
+//Libraries
 #include <ESP8266WiFi.h> // NodeMCU library
 #include "dht.h" //Temperature and humidity sensor Library
 #include "MQ7.h" //Calibrations Library for Gas sensor
