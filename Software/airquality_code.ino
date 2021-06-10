@@ -108,5 +108,5 @@ void loop() {
      client.stop(); 
     //--------------------------
     // Waiting for 60 seconds
-      delay(60000);
+      delay(60000); //i.e for every 60 sec data will be uploaded into cloud
 }
