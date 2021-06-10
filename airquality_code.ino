@@ -36,13 +36,13 @@ void setup() {
 
   //WiFi connection
   WiFi.begin(ssid, pass);
-  while(WiFi.status() != WL_CONNECTED)
+  while(WiFi.status() != WL_CONNECTED) //checking whether Wifi is connected or not
   {
-    delay(200);
+    delay(200); //if not connected waits in the loop
     Serial.print("..");
   }
   Serial.println();
-  Serial.println("NodeMCU is connected!");
+  Serial.println("NodeMCU is connected!"); //Once connected it is notified here through serial moniter
   Serial.println(WiFi.localIP());
   //-------------------------------------
   
@@ -63,10 +63,10 @@ void loop() {
     Humidity=DHT.humidity;
     Serial.print("Current humidity = ");
     Serial.print(Humidity);
-    Serial.print("%  ");//unit
+    Serial.print("%  ");//percentage unit
     Serial.print("temperature = ");
     Serial.print(Temperature); 
-    Serial.println("C  "); //units
+    Serial.println("C  "); //celsius units
   //.....end
   
   //CO from mq07
